@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Stopwatch with Image</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Section: Image -->
+        <div class="image-section">
+            <img src="stopwatch_image.png" alt="Stopwatch Illustration" class="stopwatch-image">
+        </div>
+
+        <!-- Right Section: Stopwatch -->
+        <div class="stopwatch-section">
+            <h1>Stopwatch</h1>
+            <div class="time-display">
+                <span id="minutes">00</span>:<span id="seconds">00</span>:<span id="milliseconds">00</span>
+            </div>
+            <div class="control-buttons">
+                <button id="start-btn" class="btn">Start</button>
+                <button id="pause-btn" class="btn">Pause</button>
+                <button id="reset-btn" class="btn">Reset</button>
+                <button id="lap-btn" class="btn">Lap</button>
+            </div>
+            <ul id="lap-records"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
